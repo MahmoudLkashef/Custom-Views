@@ -43,6 +43,10 @@ class ColorSelector @JvmOverloads constructor(
         binding.rightArrow.setOnClickListener(OnClickListener {
             selectNextColor()
         })
+
+        binding.colorEnabled.setOnClickListener(OnClickListener {
+            broadcastColor()
+        })
     }
 
     private fun selectNextColor() {
